@@ -1,2 +1,2 @@
-# universitylife-and-c
-an repo of c codes done given by university which i am studying  in
+# universitylife-and-code
+an repo of c codes done given by university which we are studying  in
