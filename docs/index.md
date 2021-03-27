@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Github Pages Architect Theme
 
 You can use the [editor on GitHub](https://github.com/SaicharanKandukuri/universitylife-and-code/edit/u_%26_c-pages/docs/index.md) to maintain and preview the content for your website in Markdown files.
 
