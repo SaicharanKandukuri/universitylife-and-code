@@ -8,6 +8,9 @@ void main() {
 }
 ```
 
+
+
+
 ## Q2 . Write a program that reads two nos. from key board and gives their addition,subtraction, multiplication, division and modulo.
 `+` = Addition,`-` = substraction,`*` = multiplication,`/` = Division,`%` = Modulo
 
@@ -28,7 +31,11 @@ void main(void) {
     printf("the Division of %d and %d is %f \n", n1,n2,n1/(float)n2);
     printf("the Modulo of %d and %d is %d \n", n1,n2,n1 % n2);
 }
+
 ```
+
+
+
 ## Q3 . Write a program to calculate area of circle, use π as symbolic constants.
 > instead of `%f` `%.4f` is used to print only 4 decimal places. 
  
