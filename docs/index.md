@@ -1,37 +1,108 @@
-## Github Pages Architect Theme
+# Practical Set 1
+## Q1 . Write a program to print HELLO FRIENDS!
+```c
+#include <stdio.h>
 
-You can use the [editor on GitHub](https://github.com/SaicharanKandukuri/universitylife-and-code/edit/u_%26_c-pages/docs/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+void main() {
+  print("HELLO FRIENDS!\n");
+}
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Q2 . Write a program that reads two nos. from key board and gives their addition,subtraction, multiplication, division and modulo.
+`+` = Addition,`-` = substraction,`*` = multiplication,`/` = Division,`%` = Modulo
 
-### Jekyll Themes
+```c
+#include <stdio.h>
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/SaicharanKandukuri/universitylife-and-code/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+void main(void) {
+    int n1,n2;
 
-### Support or Contact
+    printf("Please enter first number \n :");
+    scanf("%d", &n1);
+    printf("Please enter second number \n :");
+    scanf("%d", &n2);
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+    printf("the sum of %d and %d is %d \n", n1,n2,n1+n2);
+    printf("the substraction of %d and %d is %d \n", n1,n2,n1-n2);
+    printf("the multiplication of %d and %d is %d \n", n1,n2,n1*n2);
+    printf("the Division of %d and %d is %f \n", n1,n2,n1/(float)n2);
+    printf("the Modulo of %d and %d is %d \n", n1,n2,n1 % n2);
+}
+```
+## Q3 . Write a program to calculate area of circle, use π as symbolic constants.
+> instead of `%f` `%.4f` is used to print only 4 decimal places. 
+```c
+#include  <stdio.h>
+#define  PI  3.14
+
+void  main(void) {
+	int  radius_of_circle;
+	float  area_of_circle;
+	printf("please enter radius of circle \n : ");
+
+	scanf("%d", &radius_of_circle);
+	
+	area_of_circle = PI * radius_of_circle * (float)radius_of_circle;
+	printf("the area of circle is %.4f", area_of_circle);
+
+}
+```
+## Q.4 Write a program to convert days into months and days.
+```c
+#include <stdio.h>
+void main(void) {
+	   int months,days ;                                    
+                                                               
+       printf("Enter days \n :") ;                                
+       scanf("%d", &days) ;                                    
+                                                               
+       months = days / 30 ;                                    
+       days   = days % 30 ;                                                                                         
+       printf("Months = %d \nDays = %d\n",months,days);
+       }
+```
+## Q.5 Write a program which calculates the summation of three digits from the given 3digit number.
+```c
+#include  <stdio.h>
+void  main(void) {
+	int  f,m,l,t,sum,num;
+	printf("enter a number \n : ");
+	scanf("%d", &num);
+	l = num % 10;
+	t = num / 10;
+	m = t % 10;
+	f = t / 10;
+	sum = l + m + f;
+	printf("The sum of %d , %d and %d is %d\n",f,m,l,sum);
+}
+```
+## Q.6 Write a program to demonstrate enumerates data type.
+###### [learn more about enum : At geek for geeks](https://www.geeksforgeeks.org/enumeration-enum-c/)
+
+``` c
+#include <stdio.h>
+enum week{Mon, Tue,  Wed, Thu, Fri, Sat, Sun}
+void main(void) {
+	enum week day;
+	day = sun;
+	printf("%d",day);
+}
+```
+
+## Q.7 Write a program to compute Fahrenheit from centigrade.
+> `(32°F − 32) × 5/9 = 0°C`
+
+```c
+#include  <stdio.h>
+
+// centigrade to farenhite
+
+void  main() {
+	double  centig,faren;
+	printf("enter centigrade value : \n");
+	scanf("%lf",&centig);
+	faren=(centig * 9/5) + 32;
+	printf("%lf centigrade = %lf farenhite", centig, faren);
+}
+```
+ 
