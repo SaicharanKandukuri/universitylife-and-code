@@ -31,6 +31,9 @@ void main(void) {
 ```
 ## Q3 . Write a program to calculate area of circle, use π as symbolic constants.
 > instead of `%f` `%.4f` is used to print only 4 decimal places. 
+ 
+
+
 ```c
 #include  <stdio.h>
 #define  PI  3.14
