@@ -1,21 +1,28 @@
-/*
-Output : 
-         1
-      2 3 2
-    3 4 5 4 3
-  4 5 6 7 6 5 4
-5 6 7 8 9 8 7 6 5 
-*/
-#include <stdio.h>
+#include<stdio.h>
 
-void main(void) {
-    int i,j;
-    for (i=1;i<=5;i++) {
+void main() {
+    int n, c, d, num = 1, space;
+    printf("Enter a number\n");
+    scanf("%d",&n);
+    space = n - 1;
+
+    for ( d = 1 ; d <= n ; d++ ){
+        num = d;
+        for ( c = 1 ; c <= space ; c++ )
         printf(" ");
+        space--;
 
-        for (j=(i*2-1);j>=i;j--) {
-            printf("%d",j);
-            printf("\n");
+        for ( c = 1 ; c <= d ; c++ ) {
+            printf("*");
+            num++;
         }
+        num--;
+        num--;
+        for ( c = 1 ; c < d ; c++) {
+            printf("*");
+            num--;
+        }
+        printf("\n");
     }
+
 }
