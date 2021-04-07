@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+// Replace printf(*); with printf("%d", num); to print out numbers
 void main() {
     int n, c, d, num = 1, space;
     printf("Enter a number\n");
