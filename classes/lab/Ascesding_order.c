@@ -1,3 +1,6 @@
+/*              -----------------------------------
+               | A Code By @zman-1x1               |                                         
+                ------------------------------------                       */
 #include <stdio.h>
 
 void main(void) {
@@ -31,4 +34,5 @@ void main(void) {
     for (i=1;i<=value_of_array;i++) {
         printf("(%d) . %d \n",i,thearray[i]);
     }
+    printf("\n-------------\n");
 }
