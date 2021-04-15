@@ -37,7 +37,10 @@ void main(void) {
         }
 
     }
-    else printf("The Given input \"%d\" is invalid please enter number between 1- 7 ");
-    main();
+    else {
+        printf("The Given input \" %d \" is invalid please enter number between 1- 7 ",days);
+        main();
+    }
+    
     
 }
